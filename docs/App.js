@@ -47,8 +47,9 @@ class App extends Component {
         <div className='flyout'>
           <MDBNavbar color='indigo' dark expand='md' fixed='top' scrolling>
             <MDBNavbarBrand href='/' className='py-0 font-weight-bold'>
-              <Logo style={{ height: '2.5rem', width: '2.5rem' }} />
-              <strong className='align-middle'>MDB React</strong>
+              <img alt="Qries" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" 
+              style={{ height: '2.5rem', width: '4rem' }} />
+              {/* <strong className='align-middle'>Evolution</strong> */}
             </MDBNavbarBrand>
             <MDBNavbarToggler
               onClick={this.toggleCollapse('mainNavbarCollapse')}
@@ -56,6 +57,15 @@ class App extends Component {
             <MDBCollapse id='mainNavbarCollapse' isOpen={collapseID} navbar>
               <MDBNavbarNav right>
                 <MDBNavItem>
+                  <MDBNavLink
+                    exact
+                    to='/users-crud'
+                    onClick={this.closeCollapse('mainNavbarCollapse')}
+                  >
+                    <strong>Crud Offline</strong>
+                  </MDBNavLink>
+                </MDBNavItem>
+                {/* <MDBNavItem>
                   <MDBNavLink
                     exact
                     to='/'
@@ -187,7 +197,7 @@ class App extends Component {
                     </a>
                     <span>SUPPORT</span>
                   </MDBTooltip>
-                </MDBNavItem>
+                </MDBNavItem> */}
               </MDBNavbarNav>
             </MDBCollapse>
           </MDBNavbar>
@@ -198,7 +208,7 @@ class App extends Component {
           <MDBFooter color='indigo'>
             <p className='footer-copyright mb-0 py-3 text-center'>
               &copy; {new Date().getFullYear()} Copyright:
-              <a href='https://www.MDBootstrap.com'> MDBootstrap.com </a>
+              <a href='https://www.evolution-xy.fr/'> www.evolution-xy.fr/ </a>
             </p>
           </MDBFooter>
         </div>

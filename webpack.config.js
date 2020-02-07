@@ -61,7 +61,7 @@ const config = {
     open: true,
     compress: true,
     port: 8080,
-    host: `${ip}`,
+    host: `0.0.0.0`,
     hot: true
   },
   plugins: [

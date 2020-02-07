@@ -61,14 +61,15 @@ import NotificationPage from './pages/NotificationPage';
 import InputGroupPage from './pages/InputGroupPage';
 import TreeviewPage from './pages/TreeviewPage';
 import RatingPage from './pages/RatingPage';
-
-
+import CrudLocalStoragePage from './pages/CrudLocalStoragePage';
+import UsersCrudComponent from './pages/UsersCrudComponent';
+import DataCatalogPage from './pages/DataCatalogPage';
 
 class Routes extends React.Component {
   render() {
     return (
       <Switch>
-        <Route exact path='/' component={HomePage} />
+        <Route exact path='/' component={UsersCrudComponent} />
         <Route exact path='/addons' component={AddonsNavPage} />
         <Route exact path='/advanced' component={AdvancedNavPage} />
         <Route exact path='/components' component={ComponentsNavPage} />
@@ -130,7 +131,10 @@ class Routes extends React.Component {
         <Route path='/tables/datatable-api' component={DatatableApiPage} />
         <Route path='/tables/datatable' component={DatatablePage} />
 
-        
+        <Route path='/crud-local-storage' component={CrudLocalStoragePage} />
+        <Route path='/users-crud' component={UsersCrudComponent} />
+        <Route path='/data-catalog' component={DataCatalogPage} />
+
         <Route
           render={function() {
             return <h1>Not Found</h1>;

@@ -41,6 +41,7 @@
     "chart.js": "2.9.3",
     "classnames": "2.2.6",
     "focus-trap-react": "^6.0.0",
+    "idb": "^5.0.1",
     "material-ui-pickers": "2.2.4",
     "moment": "2.24.0",
     "perfect-scrollbar": "1.5.0",
@@ -56,7 +57,9 @@
     "react-router-dom": "^5.1.2",
     "react-scroll": "1.7.16",
     "react-toastify": "5.5.0",
-    "react-transition-group": "4.3.0"
+    "react-transition-group": "4.3.0",
+    "rxjs": "^6.5.4",
+    "yarn": "^1.21.1"
   },
   "peerDependencies": {
     "react": "*",
